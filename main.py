@@ -362,7 +362,7 @@ What happened: {req.incident}
 Write the complete FIR draft now. Use BNS 2023 sections (Bharatiya Nyaya Sanhita) over old IPC wherever the section exists. Keep the language formal, precise, and legally appropriate. Do not add any preamble or explanation outside the FIR format itself."""
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-1.5-flash",
         contents=prompt
     )
     return {"fir": response.text}
